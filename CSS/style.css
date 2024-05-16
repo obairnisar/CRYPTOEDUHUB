@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.header
+{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(125, 103, 12, 0.3),rgba(125, 103, 12, 0.3)) ,url('../img/header-bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    clip-path: polygon(100% 0%,100% 75%,50% 100%,0% 75%,0 0);
+    position: relative;
+}
+  
+
+.header::before
+{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left:0%;
+    right:0%;
+    background: linear-gradient(to right, #95991e 0%,#000000 0%,#f6eb16 100%);
+    opacity: 60%;
+    z-index: -1;
+}
+
+.navbar
+{
+    content: "";
+    top: 0%;
+    bottom: 0%;
+    left:0%;
+    right:0%;
+    background: linear-gradient(to right, #95991e 0%,#000000d6 0%,#b6af1e 100%);
+    opacity: 90%;
+    z-index: -1;
+}
+
+.nav-item
+{
+   font-weight: bold;
+
+}
+
+/* .nav-item:hover
+{
+   
+   background-color: yellow;
+   color: #000;
+   border: 1px solid yellow;
+   border-radius: 50px;
+} */
+
+
+
+.navbar-brand
+{
+    color: #000;
+    font-weight: bold;
+   
+}
+
+.header-section
+{
+    
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   position: relative;
+}
+
+/* p
+{
+    font: size 0.9rem; 
+    line-height: 1.6;
+    font-weight: 400;
+    color: #000;
+    font-size: x-small;
+
+} */
+
+.header-buttons a
+{
+    border: 1px solid black;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #000;
+    font-weight: bold;
+    line-height: 2.6;
+}
+
+.header-buttons a:hover
+{
+    background-color: rgb(226, 226, 13);
+    color: #000;
+    border: 1px solid rgb(226, 226, 13);
+}
+.header-extradiv
+{
+    width: 100%;
+    height: auto;
+    margin:100px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+   
+}
+.extra-div
+{
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+    font-size: small;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+.extra-h2
+{
+    margin-top: 15px;
+}
+
+.extra-div:hover
+{
+box-shadow: 0 0 10px 0 rgb(226, 226, 13);
+transform: translateY(-20%);
+border-radius: 30px;
+}
